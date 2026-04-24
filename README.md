@@ -1,5 +1,7 @@
 # ARCER: an Agentic RAG for the Automated Definition of Cyber Ranges
 
+This tool was developed as part of the research presented in: "ARCER: An Agentic RAG for the Automated Definition of Cyber Ranges" (DOI: [10.1007/978-3-032-00630-1_2](https://link.springer.com/chapter/10.1007/978-3-032-00630-1_2))
+
 ARCER (Agentic RAG for the Automated Definition of Cyber Ranges) is an intelligent agent built with **LangGraph** and **LangChain** that automates the generation and deployment of cyber range (CR) configuration files. Given a natural-language description of a cyber range scenario, ARCER retrieves relevant documentation, generates a valid configuration file for the target CR framework (e.g. [CyRIS](https://github.com/cyb3rlab/cyris)), verifies its syntax via a remote API, and optionally deploys the cyber range.
 
 ---
@@ -107,4 +109,21 @@ arcer/
 ├── requirements.txt   # Python dependencies
 ├── .env               # Environment variables (not committed)
 └── cyris_docs/        # CyRIS documentation and example YAML files
+```
+
+---
+
+## Citation
+If you use this tool in your research, please cite:
+```bibtex
+@InProceedings{lupinacci2025arcer
+    author="Lupinacci, Matteo and Blefari, Francesco and Romeo, Francesco and Pironti, Francesco Aurelio and Furfaro, Angelo",
+    editor="Coppens, Bart and Volckaert, Bruno and Naessens, Vincent and De Sutter, Bjorn",
+    title="ARCeR: An Agentic RAG for the Automated Definition of Cyber Ranges",
+    booktitle="Availability, Reliability and Security",
+    year="2025",
+    publisher="Springer Nature Switzerland",
+    pages="23--40",
+    doi="10.1007/978-3-032-00630-1_2"
+}
 ```
